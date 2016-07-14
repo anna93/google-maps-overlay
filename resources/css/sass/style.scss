@@ -22,7 +22,7 @@ html, body {
     padding: 10px;
     border-radius: 2px;
     box-shadow: 1px 1px 4px rgba(68, 68, 68, 0.7);
-    color: #444;
+    color: $gray-light;
 }
 .search-input {
     width: 90%;
@@ -30,7 +30,7 @@ html, body {
     outline: none;
     border: none;
     font-size:16px;
-    color: #444;
+    color: $gray-base;
 }
 @media only screen and (max-width: 768px) {
     .controls-container {

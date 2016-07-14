@@ -1,8 +1,9 @@
-var map;
+let map: any;
+
 function initMap() {
-    sw = new google.maps.LatLng(15.908019, 69.489511);
-    ne = new google.maps.LatLng(33.203363, 85.325566);
-    bo = new google.maps.LatLngBounds();
+    let sw: any = new google.maps.LatLng(15.908019, 69.489511);
+    let ne: any = new google.maps.LatLng(33.203363, 85.325566);
+    let bo: any = new google.maps.LatLngBounds();
     bo.extend(sw);
     bo.extend(ne);
 
