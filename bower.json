@@ -15,8 +15,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "bootstrap": "^3.3.6",
-    "bootstrap-sass": "^3.3.6"
+  "dependencies": {},
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
   }
 }
