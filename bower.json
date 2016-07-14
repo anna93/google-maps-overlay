@@ -1,0 +1,22 @@
+{
+  "name": "maps",
+  "description": "",
+  "main": "elasticindexer.js",
+  "authors": [
+    "anna93 <shekharanna1993@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
