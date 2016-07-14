@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "elasticsearch": "^11.0.1"
+    "elasticsearch": "^11.0.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }
