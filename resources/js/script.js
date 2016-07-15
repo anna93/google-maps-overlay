@@ -12,3 +12,23 @@ function initMap() {
         streetViewControl: false
     });
 }
+$(document).ready(function () {
+    $("#searchInput").keydown(function (event) {
+        if (event.which == '13') {
+            map.data.forEach(function (feature) {
+                map.data.remove(feature);
+            });
+            var queryParam = $(this).val();
+            $.get('search', { q: queryParam }, function (data) {
+                var bo = new google.maps.LatLngBounds();
+                data.geometry.coordinates[0].forEach(function (e, i) {
+                    var thisPoint = new google.maps.LatLng(e[1], e[0]);
+                    bo.extend(thisPoint);
+                    // console.log(e[0]+" "+e[1])
+                });
+                map.fitBounds(bo);
+                map.data.addGeoJson(data);
+            });
+        }
+    });
+});
