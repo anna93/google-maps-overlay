@@ -26,8 +26,8 @@ app.get('/search', function (req, res) {
             index: 'maps',
             body: {
                 query: {
-                    match: {
-                        "properties.NAME_3":searchPlace
+                    wildcard: {
+                        "properties.NAME_3":searchPlace+'*'
                     }
                 }
             }
