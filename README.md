@@ -63,4 +63,4 @@ or if in developmemt mode:
 
 You will need to run gulp for auto compilation of ts and sass, use:
 
-``` gulp ass:ts:watch ```
+``` gulp sass:ts:watch ```
